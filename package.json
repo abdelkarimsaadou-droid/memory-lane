@@ -1,0 +1,17 @@
+{
+  "name": "memory-lane-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An agent that builds personalized reminiscence sessions for older adults, grounded in Qloo's taste graph.",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.mjs",
+    "demo": "QLOO_MODE=demo node server.mjs"
+  },
+  "engines": { "node": ">=22.19.0" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.1",
+    "@qloo/qloo-harness": "0.1.26"
+  }
+}

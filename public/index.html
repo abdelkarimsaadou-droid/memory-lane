@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Memory Lane</title>
+  <meta name="description" content="Plan a personalized reminiscence session for an older person, grounded in their real cultural tastes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="demo-banner" class="banner" hidden>
+    Demo mode: suggestions use sample data until the Qloo key is connected.
+  </div>
+
+  <main class="layout">
+    <section class="intro" aria-labelledby="intro-title">
+      <h1 id="intro-title">Plan a memory session in two minutes</h1>
+      <p class="lede">Tell us a little about the person. Memory Lane finds the music, films and food of their youth with Qloo, then writes a calm 40-minute session you can run with them today.</p>
+
+      <form id="profile" class="profile" novalidate>
+        <div class="row">
+          <label>First name
+            <input name="firstName" autocomplete="off" placeholder="Fatima" />
+          </label>
+          <label>Year of birth
+            <input name="birthYear" inputmode="numeric" maxlength="4" placeholder="1948" />
+          </label>
+        </div>
+        <div class="row">
+          <label>Grew up in
+            <input name="grewUpIn" placeholder="Algiers, Algeria" />
+          </label>
+          <label>Lives in now
+            <input name="livesIn" placeholder="Paris, France" />
+          </label>
+        </div>
+        <label>Singers or bands they love
+          <input name="artists" placeholder="Warda, Dahmane El Harrachi" />
+        </label>
+        <label>Films they talk about
+          <input name="films" placeholder="Chronicle of the Years of Fire" />
+        </label>
+        <label>A dish that means home
+          <input name="dishes" placeholder="Couscous" />
+        </label>
+        <label>Topics to avoid (optional)
+          <input name="avoid" placeholder="War, hospital" />
+        </label>
+        <fieldset class="lang">
+          <legend>Session language</legend>
+          <label class="choice"><input type="radio" name="language" value="en" checked /> English</label>
+          <label class="choice"><input type="radio" name="language" value="fr" /> Français</label>
+        </fieldset>
+        <p class="hint">Separate several names with commas. Nothing you type is stored.</p>
+        <div class="actions">
+          <button type="submit" class="primary">Create the session</button>
+          <button type="button" id="example" class="ghost">Fill in an example</button>
+        </div>
+        <p id="error" class="error" role="alert" hidden></p>
+      </form>
+    </section>
+
+    <section id="result" class="result" aria-live="polite">
+      <div class="empty">
+        <p>Your session will appear here: a short warm-up, a playlist, a film moment, a game with no wrong answers and a taste of home.</p>
+      </div>
+    </section>
+  </main>
+
+  <template id="session-tpl">
+    <article class="session">
+      <header class="session-head">
+        <h2 class="session-title"></h2>
+        <div class="session-tools">
+          <span class="key"><i class="dot family"></i><span class="k-family"></span></span>
+          <span class="key"><i class="dot qloo"></i><span class="k-qloo"></span></span>
+          <button type="button" class="ghost small" id="print">Print</button>
+        </div>
+      </header>
+      <ol class="timeline"></ol>
+      <details class="trace">
+        <summary>How Memory Lane used Qloo</summary>
+        <ol class="trace-list"></ol>
+      </details>
+    </article>
+  </template>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
