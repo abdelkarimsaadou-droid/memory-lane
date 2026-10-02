@@ -3,16 +3,23 @@ const result = document.getElementById("result");
 const errorBox = document.getElementById("error");
 const submit = form.querySelector('button[type="submit"]');
 
-const EXAMPLE = {
-  firstName: "Fatima",
-  birthYear: "1948",
-  grewUpIn: "Algiers, Algeria",
-  livesIn: "Paris, France",
-  artists: "Warda, Dahmane El Harrachi",
-  films: "Chronicle of the Years of Fire",
-  dishes: "Couscous",
-  avoid: "War",
-};
+// Most nursing-home residents in France are very old women born in France,
+// so the first example is the common case; the others show other cultures.
+const EXAMPLES = [
+  {
+    firstName: "Jeannine", birthYear: "1938", grewUpIn: "Lyon, France", livesIn: "Paris, France",
+    artists: "Édith Piaf, Bourvil", films: "La Grande Vadrouille", dishes: "Gratin dauphinois", avoid: "",
+  },
+  {
+    firstName: "Manuel", birthYear: "1945", grewUpIn: "Porto, Portugal", livesIn: "Champigny-sur-Marne, France",
+    artists: "Amália Rodrigues", films: "O Pátio das Cantigas", dishes: "Bacalhau", avoid: "",
+  },
+  {
+    firstName: "Fatima", birthYear: "1948", grewUpIn: "Algiers, Algeria", livesIn: "Paris, France",
+    artists: "Warda, Dahmane El Harrachi", films: "", dishes: "Couscous", avoid: "War",
+  },
+];
+let exampleIndex = 0;
 
 fetch("/api/health")
   .then((r) => r.json())
@@ -20,7 +27,9 @@ fetch("/api/health")
   .catch(() => {});
 
 document.getElementById("example").addEventListener("click", () => {
-  for (const [k, v] of Object.entries(EXAMPLE)) form.elements[k].value = v;
+  const example = EXAMPLES[exampleIndex];
+  exampleIndex = (exampleIndex + 1) % EXAMPLES.length;
+  for (const [k, v] of Object.entries(example)) form.elements[k].value = v;
   form.elements.firstName.focus();
 });
 

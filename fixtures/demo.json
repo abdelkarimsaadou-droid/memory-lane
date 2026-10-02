@@ -1,24 +1,65 @@
 {
   "_note": "Hand-written sample data used only in demo mode while the Qloo event key is pending. Not Qloo output.",
-  "qloo_find_tags": [
+  "tags": [
     { "id": "urn:tag:demo:1", "name": "Demo tag" }
   ],
-  "qloo_recommend:artist": [
-    { "name": "El Hadj M'Hamed El Anka", "type": "artist" },
-    { "name": "Cheikh El Hasnaoui", "type": "artist" },
-    { "name": "Oum Kalthoum", "type": "artist" },
-    { "name": "Fadéla Dziria", "type": "artist" },
-    { "name": "Abdel Halim Hafez", "type": "artist" },
-    { "name": "Lili Boniche", "type": "artist" }
-  ],
-  "qloo_recommend:movie": [
-    { "name": "Les Vacances de l'inspecteur Tahar", "type": "movie" },
-    { "name": "Hassan Terro", "type": "movie" },
-    { "name": "Omar Gatlato", "type": "movie" },
-    { "name": "Mon oncle", "type": "movie" }
-  ],
-  "qloo_recommend:place": [
-    { "name": "(demo) Algerian restaurant", "type": "place" },
-    { "name": "(demo) Oriental pastry shop", "type": "place" }
-  ]
+  "personas": {
+    "lyon": {
+      "artist": [
+        { "name": "Charles Trenet", "type": "artist" },
+        { "name": "Georges Brassens", "type": "artist" },
+        { "name": "Yves Montand", "type": "artist" },
+        { "name": "Dalida", "type": "artist" },
+        { "name": "Gilbert Bécaud", "type": "artist" },
+        { "name": "Tino Rossi", "type": "artist" }
+      ],
+      "movie": [
+        { "name": "La Grande Vadrouille", "type": "movie" },
+        { "name": "Le Corniaud", "type": "movie" },
+        { "name": "Les Parapluies de Cherbourg", "type": "movie" },
+        { "name": "Les Vacances de M. Hulot", "type": "movie" }
+      ],
+      "place": [
+        { "name": "(demo) Lyon-style bouchon", "type": "place" },
+        { "name": "(demo) Traditional bakery", "type": "place" }
+      ]
+    },
+    "porto": {
+      "artist": [
+        { "name": "Carlos do Carmo", "type": "artist" },
+        { "name": "Alfredo Marceneiro", "type": "artist" },
+        { "name": "Linda de Suza", "type": "artist" },
+        { "name": "Roberto Leal", "type": "artist" },
+        { "name": "José Afonso", "type": "artist" }
+      ],
+      "movie": [
+        { "name": "O Pátio das Cantigas", "type": "movie" },
+        { "name": "Aniki-Bóbó", "type": "movie" },
+        { "name": "A Canção de Lisboa", "type": "movie" }
+      ],
+      "place": [
+        { "name": "(demo) Portuguese restaurant", "type": "place" },
+        { "name": "(demo) Pastelaria", "type": "place" }
+      ]
+    },
+    "algiers": {
+      "artist": [
+        { "name": "El Hadj M'Hamed El Anka", "type": "artist" },
+        { "name": "Cheikh El Hasnaoui", "type": "artist" },
+        { "name": "Oum Kalthoum", "type": "artist" },
+        { "name": "Fadéla Dziria", "type": "artist" },
+        { "name": "Abdel Halim Hafez", "type": "artist" },
+        { "name": "Lili Boniche", "type": "artist" }
+      ],
+      "movie": [
+        { "name": "Les Vacances de l'inspecteur Tahar", "type": "movie" },
+        { "name": "Hassan Terro", "type": "movie" },
+        { "name": "Omar Gatlato", "type": "movie" }
+      ],
+      "place": [
+        { "name": "(demo) Algerian restaurant", "type": "place" },
+        { "name": "(demo) Oriental pastry shop", "type": "place" }
+      ]
+    }
+  }
 }
