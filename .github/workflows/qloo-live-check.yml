@@ -1,6 +1,11 @@
 name: Qloo live check
 on:
   workflow_dispatch:
+    inputs:
+      base_url:
+        description: Optional Qloo API base URL
+        required: false
+        default: ""
 permissions:
   contents: write
 jobs:
@@ -16,6 +21,8 @@ jobs:
       - run: node scripts/live-check.mjs
         env:
           QLOO_API_KEY: ${{ secrets.QLOO_API_KEY }}
+          QLOO_BASE_URL: ${{ inputs.base_url }}
+          QLOO_TRUSTED_BASE_URL: ${{ inputs.base_url }}
       # Save raw Qloo responses (no key inside) to a separate branch for review.
       - name: Publish results to the live-results branch
         run: |
