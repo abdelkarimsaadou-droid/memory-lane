@@ -18,6 +18,11 @@ jobs:
         with:
           node-version: 22
       - run: npm install --no-audit --no-fund
+      - name: Key fingerprint (length + short hash, never the key)
+        run: |
+          printf '%s' "$K" | wc -c > fp.txt; printf '%s' "$K" | sha256sum | cut -c1-8 >> fp.txt
+        env:
+          K: ${{ secrets.QLOO_API_KEY }}
       - run: node scripts/live-check.mjs
         env:
           QLOO_API_KEY: ${{ secrets.QLOO_API_KEY }}
@@ -31,6 +36,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout --orphan live-results
           git rm -rq --cached .
-          git add -f results/live-check.json
+          git add -f results/live-check.json fp.txt
           git commit -qm "Qloo live check results"
           git push -f origin live-results
