@@ -1,10 +1,8 @@
 name: Qloo live check
 on:
   workflow_dispatch:
-  push:
-    paths: ["lib/**", "scripts/live-check.mjs", ".github/workflows/qloo-live-check.yml"]
 permissions:
-  contents: read
+  contents: write
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -18,3 +16,14 @@ jobs:
       - run: node scripts/live-check.mjs
         env:
           QLOO_API_KEY: ${{ secrets.QLOO_API_KEY }}
+      # Save raw Qloo responses (no key inside) to a separate branch for review.
+      - name: Publish results to the live-results branch
+        run: |
+          if grep -q "${{ secrets.QLOO_API_KEY }}" results/live-check.json; then echo "key found in output, refusing"; exit 1; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan live-results
+          git rm -rq --cached .
+          git add -f results/live-check.json
+          git commit -qm "Qloo live check results"
+          git push -f origin live-results
