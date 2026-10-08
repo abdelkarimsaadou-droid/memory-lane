@@ -31,11 +31,11 @@ jobs:
       # Save raw Qloo responses (no key inside) to a separate branch for review.
       - name: Publish results to the live-results branch
         run: |
-          if grep -q "${{ secrets.QLOO_API_KEY }}" results/live-check.json; then echo "key found in output, refusing"; exit 1; fi
+          if grep -rq "${{ secrets.QLOO_API_KEY }}" results; then echo "key found in output, refusing"; exit 1; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout --orphan live-results
           git rm -rq --cached .
-          git add -f results/live-check.json fp.txt
+          git add -f results/live-check.json results/agents.json fp.txt
           git commit -qm "Qloo live check results"
           git push -f origin live-results
