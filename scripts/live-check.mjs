@@ -10,14 +10,23 @@ if (!process.env.QLOO_API_KEY) {
 }
 
 const calls = [
-  ["qloo_recommend", { target_type: "movie", limit: 5 , signal_tags: ["urn:tag:keyword:media:1950s"] }],
-  ["qloo_recommend", { target_type: "movie", limit: 5, signal_location: "Lyon, France" }],
-  ["qloo_recommend", { target_type: "movie", limit: 5, signals: ["La Grande Vadrouille"] }],
-  ["qloo_find_tags", { query: "French cinema", limit: 5 }],
-  ["qloo_find_tags", { query: "Portuguese cuisine", limit: 3 }],
+  ["qloo_find_tags", { query: "chanson française", limit: 5 }],
+  ["qloo_find_tags", { query: "fado", limit: 5 }],
+  ["qloo_find_tags", { query: "chaabi", limit: 5 }],
+  ["qloo_find_tags", { query: "French music", limit: 5 }],
+  ["qloo_find_tags", { query: "classic French films", limit: 5 }],
+  ["qloo_find_tags", { query: "French comedy", limit: 5 }],
+  ["qloo_recommend", { target_type: "artist", signals: ["75AA462F-F6F2-4DCB-AC92-6024C3BF8A84"], limit: 15 }],
+  ["qloo_recommend", { target_type: "artist", signals: ["75AA462F-F6F2-4DCB-AC92-6024C3BF8A84"], include_tags: ["urn:tag:genre:music:chanson"], limit: 15 }],
+  ["qloo_recommend", { target_type: "artist", signal_tags: ["urn:tag:keyword:qloo:1950s"], include_tags: ["urn:tag:genre:music:france"], limit: 15 }],
+  ["qloo_recommend", { target_type: "movie", signals: ["La Grande Vadrouille"], signal_location: "France", limit: 20 }],
+  ["qloo_recommend", { target_type: "movie", signal_tags: ["urn:tag:keyword:qloo:1950s"], include_tags: ["urn:tag:keyword:media:1950s"], limit: 20 }],
+  ["qloo_recommend", { target_type: "movie", signal_location: "France", include_tags: ["urn:tag:genre:media:classic"], limit: 20 }],
+  ["qloo_recommend", { target_type: "place", filter_location: "Paris, France", signal_tags: ["urn:tag:cuisine:qloo:lyonnais"], limit: 5 }],
+  ["qloo_recommend", { target_type: "place", filter_location: "Paris, France", signal_location: "Paris, France", include_tags: ["urn:tag:cuisine:qloo:lyonnais"], limit: 5 }],
 ];
 
-const people = [
+const people = process.env.SKIP_AGENTS ? [] : [
   { firstName: "Jeannine", birthYear: 1938, grewUpIn: "Lyon, France", livesIn: "Paris, France", artists: "Édith Piaf, Bourvil", films: "La Grande Vadrouille", dishes: "Gratin dauphinois", language: "fr" },
   { firstName: "Manuel", birthYear: 1944, grewUpIn: "Porto, Portugal", livesIn: "Paris, France", artists: "Amália Rodrigues", films: "", dishes: "Bacalhau", language: "en" },
   { firstName: "Fatima", birthYear: 1950, grewUpIn: "Algiers, Algeria", livesIn: "Marseille, France", artists: "Dahmane El Harrachi", films: "", dishes: "Couscous", language: "fr" },
