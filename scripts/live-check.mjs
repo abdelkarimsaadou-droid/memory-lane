@@ -9,16 +9,7 @@ if (!process.env.QLOO_API_KEY) {
   process.exit(1);
 }
 
-const calls = [
-  ["qloo_recommend", { target_type: "movie", signal_tags: ["urn:tag:keyword:media:1950s"], include_tags: ["urn:tag:keyword:media:1950s"], signal_location: "France", limit: 20 }],
-  ["qloo_recommend", { target_type: "movie", signal_tags: ["urn:tag:keyword:media:1950s"], include_tags: ["urn:tag:keyword:media:1950s"], limit: 20 }],
-  ["qloo_recommend", { target_type: "movie", signals: ["La Grande Vadrouille"], limit: 20 }],
-  ["qloo_recommend", { target_type: "movie", signal_tags: ["urn:tag:interests:qloo:classic_french_cinema"], limit: 20 }],
-  ["qloo_recommend", { target_type: "movie", include_tags: ["urn:tag:interests:qloo:french_cinema"], signal_tags: ["urn:tag:keyword:media:1960s"], limit: 20 }],
-  ["qloo_find_tags", { query: "classic film", limit: 6 }],
-  ["qloo_find_tags", { query: "black and white film", limit: 6 }],
-  ["qloo_recommend", { target_type: "tv_show", signal_tags: ["urn:tag:keyword:media:1960s"], include_tags: ["urn:tag:keyword:media:1960s"], limit: 15 }],
-];
+const calls = [];
 
 const people = process.env.SKIP_AGENTS ? [] : [
   { firstName: "Jeannine", birthYear: 1938, grewUpIn: "Lyon, France", livesIn: "Paris, France", artists: "Édith Piaf, Bourvil", films: "La Grande Vadrouille", dishes: "Gratin dauphinois", language: "fr" },
