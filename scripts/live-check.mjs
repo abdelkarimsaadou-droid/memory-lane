@@ -10,20 +10,8 @@ if (!process.env.QLOO_API_KEY) {
 }
 
 const calls = [
-  ["qloo_recommend", { target_type: "movie", signals: ["La Grande Vadrouille"], signal_location: "France", include_tags: ["urn:tag:keyword:media:1960s"], limit: 15 }],
-  ["qloo_recommend", { target_type: "movie", signals: ["La Grande Vadrouille"], signal_location: "France", include_tags: ["urn:tag:interests:qloo:classic_french_cinema"], limit: 15 }],
-  ["qloo_recommend", { target_type: "movie", signal_location: "France", include_tags: ["urn:tag:keyword:media:1950s", "urn:tag:interests:qloo:french_cinema"], include_tags_operator: "intersection", limit: 15 }],
-  ["qloo_recommend", { target_type: "movie", signal_location: "Portugal", include_tags: ["urn:tag:keyword:media:1950s"], limit: 15 }],
-  ["qloo_recommend", { target_type: "movie", signal_location: "Algeria", include_tags: ["urn:tag:keyword:media:1960s"], limit: 15 }],
-  ["qloo_find_tags", { query: "1960s", limit: 5 }],
-  ["qloo_find_tags", { query: "France music", limit: 5 }],
-  ["qloo_find_tags", { query: "Portugal music", limit: 5 }],
-  ["qloo_find_tags", { query: "Algeria music", limit: 5 }],
-  ["qloo_recommend", { target_type: "artist", signals: ["Amália Rodrigues"], include_tags: ["urn:tag:genre:music:fado"], limit: 12 }],
-  ["qloo_recommend", { target_type: "artist", signals: ["Dahmane El Harrachi"], include_tags: ["urn:tag:genre:music:chaabi"], limit: 12 }],
-  ["qloo_recommend", { target_type: "artist", signals: ["Dahmane El Harrachi"], limit: 12 }],
-  ["qloo_recommend", { target_type: "place", filter_location: "Marseille, France", signal_location: "Marseille, France", include_tags: ["urn:tag:cuisine:qloo:algerian"], limit: 5 }],
-  ["qloo_recommend", { target_type: "place", filter_location: "Paris, France", signal_location: "Paris, France", include_tags: ["urn:tag:interests:qloo:portuguese_cuisine"], limit: 5 }],
+  ["qloo_find_tags", { query: "Algiers, Algeria cuisine", limit: 5 }],
+  ["qloo_find_tags", { query: "Porto, Portugal cuisine", limit: 5 }],
 ];
 
 const people = process.env.SKIP_AGENTS ? [] : [
