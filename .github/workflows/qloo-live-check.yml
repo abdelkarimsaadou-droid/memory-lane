@@ -6,6 +6,10 @@ on:
         description: Optional Qloo API base URL
         required: false
         default: ""
+      skip_agents:
+        description: Skip full agent runs
+        required: false
+        default: ""
 permissions:
   contents: write
 jobs:
@@ -26,6 +30,7 @@ jobs:
       - run: node scripts/live-check.mjs
         env:
           QLOO_API_KEY: ${{ secrets.QLOO_API_KEY }}
+          SKIP_AGENTS: ${{ inputs.skip_agents }}
           QLOO_BASE_URL: ${{ inputs.base_url || 'https://hackathon.api.qloo.com' }}
           QLOO_TRUSTED_BASE_URL: ${{ inputs.base_url || 'https://hackathon.api.qloo.com' }}
       # Save raw Qloo responses (no key inside) to a separate branch for review.
