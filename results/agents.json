@@ -1,0 +1,1068 @@
+[
+ {
+  "profile": {
+   "firstName": "Jeannine",
+   "birthYear": 1938,
+   "youthDecade": 1950,
+   "youthStart": 1948,
+   "grewUpIn": "Lyon, France",
+   "livesIn": "Paris, France",
+   "artists": [
+    "Édith Piaf",
+    "Bourvil"
+   ],
+   "films": [
+    "La Grande Vadrouille"
+   ],
+   "dishes": [
+    "Gratin dauphinois"
+   ],
+   "avoid": [],
+   "language": "fr"
+  },
+  "session": {
+   "title": "Un voyage dans les souvenirs avec Jeannine",
+   "labels": {
+    "qloo": "Suggéré par le graphe de goûts de Qloo",
+    "family": "Indiqué par la famille"
+   },
+   "sections": [
+    {
+     "id": "warmup",
+     "title": "Mise en route (5 min)",
+     "questions": [
+      "Quand vous étiez jeune, à Lyon, quelle odeur avaient les rues ?",
+      "Que faisiez-vous le dimanche avec vos amis dans les années 50 ?",
+      "Qui cuisinait le mieux dans votre famille ? Que préparait-il ou elle ?"
+     ]
+    },
+    {
+     "id": "music",
+     "title": "Coin musique (10 min)",
+     "intro": "Faites écouter une ou deux chansons de chaque artiste, puis demandez :",
+     "items": [
+      {
+       "name": "Édith Piaf",
+       "origin": "family"
+      },
+      {
+       "name": "Bourvil",
+       "origin": "family"
+      },
+      {
+       "id": "5DA5AB01-AC17-41D9-9C0D-8FC6CA362535",
+       "name": "Juliette Gréco",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9423679352035135,
+       "tags": [],
+       "address": null,
+       "description": "Juliette Gréco was a renowned French singer and actress, famous for her deep, expressive voice and her significant contributions to the French chanson genre. She became an icon of post-war French culture, known for her poetic and emotive singing style, often collaborating with prominent French poets and songwriters. Her career spanned several decades, during which she also acted in films and theatrical productions.",
+       "image": "https://images.qloo.com/i/5DA5AB01-AC17-41D9-9C0D-8FC6CA362535-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "6E4A9DE5-CE79-4ABB-B91A-CD2430C22D29",
+       "name": "Fréhel",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9400384165882297,
+       "tags": [],
+       "address": null,
+       "description": "Fréhel, born Marguerite Boulc'h, was a prominent French singer and actress famous for her powerful and emotional performances in the chanson genre during the early 1900s. She was a key figure in Parisian cabaret and musette scenes, known for her distinctive voice and heartfelt delivery. Her career was marked by both critical acclaim and personal struggles, making her an iconic figure in French popular music history.",
+       "image": "https://images.qloo.com/i/6E4A9DE5-CE79-4ABB-B91A-CD2430C22D29-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "D10AEA87-6274-450D-A6AD-39D5970CADC3",
+       "name": "Carla Bruni",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9395229878581031,
+       "tags": [],
+       "address": null,
+       "description": "Carla Bruni is an Italian-French singer-songwriter and former model who gained fame for her intimate, melodic songs often rooted in the French chanson tradition. She began her career as a model before transitioning to music, releasing several albums that blend folk, pop, and acoustic styles. Bruni is also known for her marriage to former French President Nicolas Sarkozy, which brought her additional public attention beyond her artistic career.",
+       "image": "https://images.qloo.com/i/D10AEA87-6274-450D-A6AD-39D5970CADC3-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "7466D7B4-F3E7-4BEB-9874-B0E0E3E445C1",
+       "name": "Françoise Hardy",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9386942427471062,
+       "tags": [],
+       "address": null,
+       "description": "Françoise Hardy is a French singer-songwriter and occasional actress whose cool, intimate vocal style and sophisticated image made her one of the defining figures of 1960s French pop and the yé-yé movement. She shot to fame with the 1962 hit \"Tous les garçons et les filles,\" and over decades released albums in French and several other languages, earning a reputation as both a fashionable icon and a thoughtful, melancholic songwriter. Hardy continued recording and touring across many decades, influencing generations of Francophone and international artists with her minimal arrangements, lyrical introspection and elegant persona.",
+       "image": "https://images.qloo.com/i/7466D7B4-F3E7-4BEB-9874-B0E0E3E445C1-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "AA2A458A-2BA4-4A7F-A946-179E1FAFEAFC",
+       "name": "Yves Montand",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9345664351307186,
+       "tags": [],
+       "address": null,
+       "description": "Yves Montand was a French-Italian singer and actor famous for his smooth voice, charismatic stage presence, and contributions to French chanson and cinema. Born Ivo Livi in Italy, he moved to France and became a celebrated figure in French popular culture, known for his romantic and socially conscious songs as well as his film roles.",
+       "image": "https://images.qloo.com/i/AA2A458A-2BA4-4A7F-A946-179E1FAFEAFC-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "F1ADC440-8D97-4ADF-9866-2BB23E8A7557",
+       "name": "Paris Combo",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9288613282313991,
+       "tags": [],
+       "address": null,
+       "description": "Paris Combo is a French musical group formed in the mid-1990s, known for their eclectic blend of chanson, jazz, pop, and world music styles. The band combines vintage French chanson with elements of swing, jazz, and electro swing, creating a unique and vibrant sound. Their music often features lively rhythms, accordion, and a mix of male and female vocals, capturing a retro yet contemporary vibe. The group gained international recognition for their sophisticated and playful approach to French popular music.",
+       "image": "https://images.qloo.com/i/F1ADC440-8D97-4ADF-9866-2BB23E8A7557-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      }
+     ],
+     "questions": [
+      "Est-ce que Édith Piaf vous fait penser à quelqu'un ?",
+      "Où étiez-vous quand vous écoutiez Édith Piaf ?"
+     ]
+    },
+    {
+     "id": "film",
+     "title": "Moment cinéma (10 min)",
+     "intro": "Regardez un court extrait de « La Grande Vadrouille », puis demandez :",
+     "questions": [
+      "Alliez-vous au cinéma ? Avec qui ?",
+      "Comment s'habillait-on pour sortir à l'époque ?"
+     ],
+     "extraTitle": null,
+     "items": []
+    },
+    {
+     "id": "game",
+     "title": "Plutôt ceci ou cela ? (5 min)",
+     "intro": "Il n'y a pas de mauvaise réponse : le but est de lancer une histoire.",
+     "questions": [
+      "Juliette Gréco ou Fréhel ?",
+      "Carla Bruni ou Françoise Hardy ?",
+      "Yves Montand ou Paris Combo ?"
+     ]
+    },
+    {
+     "id": "taste",
+     "title": "Un goût de chez soi (10 min)",
+     "intro": "Parlez du plat « Gratin dauphinois » : qui le préparait, pour quelles occasions, ce qui le rendait spécial.",
+     "extraTitle": "Adresses autour de Paris qui pourraient servir la cuisine de leur enfance :",
+     "items": [
+      {
+       "id": "9DBE1817-3C65-40D3-8717-F2A6A85E5E51",
+       "name": "Chez Fred, depuis 1945",
+       "type": "urn:entity:place",
+       "year": null,
+       "affinity": 0.9978229124518675,
+       "tags": [],
+       "address": "190 bis Bd Pereire 75017 Paris France",
+       "description": "Longstanding Parisian bistro serving classic French dishes and seasonal bistronomy in vintage post-war decor with an extensive Burgundy and Bordeaux wine selection.",
+       "image": "https://images.qloo.com/i/9DBE1817-3C65-40D3-8717-F2A6A85E5E51-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "C7F138D1-9EC9-4880-9F0A-69AAF426C384",
+       "name": "Le Bistro Marbeuf",
+       "type": "urn:entity:place",
+       "year": null,
+       "affinity": 0.9977401749485312,
+       "tags": [],
+       "address": "21 Rue Marbeuf 75008 Paris France",
+       "description": "Elegant wood-paneled Parisian bistro serving classic Lyonnais specialties like onion soup and duck confit with regional wines near the Champs-Élysées.",
+       "image": "https://images.qloo.com/i/C7F138D1-9EC9-4880-9F0A-69AAF426C384-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "229A25EE-3FE9-4ABB-BED0-603F74F351CD",
+       "name": "Chez René",
+       "type": "urn:entity:place",
+       "year": null,
+       "affinity": 0.9952648820668278,
+       "tags": [],
+       "address": "14 Bd Saint-Germain 75005 Paris France",
+       "description": "Historic Saint-Germain brasserie serving classic French dishes like escargots, tartares and crème caramel in an art-poster hung, literary Latin Quarter setting.",
+       "image": "https://images.qloo.com/i/229A25EE-3FE9-4ABB-BED0-603F74F351CD-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "A7A8C867-FC99-4A64-A346-6AF494A7B527",
+       "name": "ANNA - Maison GRF (Grillé Rôti Fondant) Paris 17",
+       "type": "urn:entity:place",
+       "year": null,
+       "affinity": 0.9946394677876894,
+       "tags": [],
+       "address": "35 Pl. Saint-Ferdinand 75017 Paris France",
+       "description": "Cozy Parisian French restaurant in the 17th arrondissement offering cocktails, vegetarian options, late-night dining, private dining and an extensive wine list.",
+       "image": "https://images.qloo.com/i/A7A8C867-FC99-4A64-A346-6AF494A7B527-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      }
+     ]
+    },
+    {
+     "id": "notes",
+     "title": "Conseils pour la personne qui anime",
+     "questions": [
+      "Restez court et calme. Arrêtez dès que la personne semble fatiguée.",
+      "Suivez l'histoire qu'elle a envie de raconter, pas le programme.",
+      "Ne corrigez jamais un souvenir, même si un détail semble faux."
+     ]
+    }
+   ]
+  },
+  "trace": [
+   {
+    "purpose": "Find the tag for the 1950s",
+    "tool": "qloo_find_tags",
+    "args": {
+     "query": "1950s",
+     "limit": 5
+    },
+    "status": "ok",
+    "count": 5,
+    "mode": "live",
+    "ms": 1700
+   },
+   {
+    "purpose": "Find the music of France",
+    "tool": "qloo_find_tags",
+    "args": {
+     "query": "France music",
+     "limit": 5
+    },
+    "status": "ok",
+    "count": 5,
+    "mode": "live",
+    "ms": 112
+   },
+   {
+    "purpose": "Find the cuisine of Lyon, France",
+    "tool": "qloo_find_tags",
+    "args": {
+     "query": "Lyon, France cuisine",
+     "limit": 5
+    },
+    "status": "ok",
+    "count": 5,
+    "mode": "live",
+    "ms": 114
+   },
+   {
+    "purpose": "Music they are likely to love",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "artist",
+     "signals": [
+      "Édith Piaf",
+      "Bourvil"
+     ],
+     "include_tags": [
+      "urn:tag:genre:music:france",
+      "urn:tag:genre:music:french",
+      "urn:tag:genre:music:francais"
+     ],
+     "include_tags_operator": "union",
+     "limit": 12
+    },
+    "status": "needs_input",
+    "summary": "Choose or correct the unresolved Qloo inputs.",
+    "count": 0,
+    "mode": "live",
+    "ms": 354
+   },
+   {
+    "purpose": "Music they are likely to love (names matched to Qloo artists)",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "artist",
+     "signals": [
+      "75AA462F-F6F2-4DCB-AC92-6024C3BF8A84",
+      "Bourvil"
+     ],
+     "include_tags": [
+      "urn:tag:genre:music:france",
+      "urn:tag:genre:music:french",
+      "urn:tag:genre:music:francais"
+     ],
+     "include_tags_operator": "union",
+     "limit": 12
+    },
+    "status": "ok",
+    "count": 12,
+    "mode": "live",
+    "ms": 3728
+   },
+   {
+    "purpose": "Films of the 1950s",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "movie",
+     "signal_tags": [
+      "urn:tag:keyword:media:1950s"
+     ],
+     "include_tags": [
+      "urn:tag:keyword:media:1950s"
+     ],
+     "signal_location": "France",
+     "limit": 20
+    },
+    "status": "ok",
+    "count": 16,
+    "mode": "live",
+    "ms": 327
+   },
+   {
+    "purpose": "A taste of home near Paris, France",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "place",
+     "signal_location": "Paris, France",
+     "filter_location": "Paris, France",
+     "include_tags": [
+      "urn:tag:cuisine:qloo:lyonnais",
+      "urn:tag:cuisine:qloo:lyonnaise",
+      "urn:tag:cuisine:qloo:lyon_cuisine",
+      "urn:tag:cuisine:qloo:bouchon_lyonnais"
+     ],
+     "include_tags_operator": "union",
+     "limit": 8
+    },
+    "status": "ok",
+    "count": 7,
+    "mode": "live",
+    "ms": 286
+   }
+  ],
+  "mode": "live"
+ },
+ {
+  "profile": {
+   "firstName": "Manuel",
+   "birthYear": 1944,
+   "youthDecade": 1950,
+   "youthStart": 1954,
+   "grewUpIn": "Porto, Portugal",
+   "livesIn": "Paris, France",
+   "artists": [
+    "Amália Rodrigues"
+   ],
+   "films": [],
+   "dishes": [
+    "Bacalhau"
+   ],
+   "avoid": [],
+   "language": "en"
+  },
+  "session": {
+   "title": "A trip down memory lane with Manuel",
+   "labels": {
+    "qloo": "Suggested by Qloo's taste graph",
+    "family": "From the family"
+   },
+   "sections": [
+    {
+     "id": "warmup",
+     "title": "Warm-up (5 min)",
+     "questions": [
+      "When you were young in Porto, what did the streets smell like?",
+      "What did you and your friends do on a Sunday in the 1950s?",
+      "Who was the best cook in your family? What did they make?"
+     ]
+    },
+    {
+     "id": "music",
+     "title": "Music corner (10 min)",
+     "intro": "Play one or two songs from each artist, then pause and ask:",
+     "items": [
+      {
+       "name": "Amália Rodrigues",
+       "origin": "family"
+      },
+      {
+       "id": "9A2182A8-13A8-41EC-A890-C645CF130006",
+       "name": "Mariza",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9763789421723257,
+       "tags": [],
+       "address": null,
+       "description": "Mariza is a renowned Portuguese fado singer who has played a significant role in popularizing and modernizing fado music internationally. Born Mariza Rodrigues Pereira in Mozambique and raised in Lisbon, Portugal, she blends traditional fado with contemporary influences, bringing a fresh and emotive voice to the genre. Her powerful vocals and expressive performances have earned her critical acclaim and a global fanbase.",
+       "image": "https://images.qloo.com/i/9A2182A8-13A8-41EC-A890-C645CF130006-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "6A5E5D3B-F15B-4831-B17C-5FAF194DD3CF",
+       "name": "Katia Guerreiro",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9732602911852404,
+       "tags": [],
+       "address": null,
+       "description": "Katia Guerreiro is a renowned Portuguese fado singer celebrated for her authentic and traditional approach to fado music. She is known for her deep, emotive voice and her dedication to preserving the classic fado style, often performing songs that reflect the cultural and emotional depth of Portuguese heritage.",
+       "image": "https://images.qloo.com/i/6A5E5D3B-F15B-4831-B17C-5FAF194DD3CF-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "8B77E725-80FA-4D7A-8024-AB902B9D1C51",
+       "name": "Maria Teresa de Noronha",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9708037778939944,
+       "tags": [],
+       "address": null,
+       "description": "Maria Teresa de Noronha was a renowned Portuguese fado singer celebrated for her elegant and traditional interpretation of fado music, a genre deeply rooted in Portuguese culture and characterized by its melancholic and expressive nature.",
+       "image": "https://images.qloo.com/i/8B77E725-80FA-4D7A-8024-AB902B9D1C51-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "346887B1-BE7C-4611-8B47-7F30BA8ACF07",
+       "name": "Carlos do Carmo",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9681366431616432,
+       "tags": [],
+       "address": null,
+       "description": "Carlos do Carmo was a celebrated Portuguese fado singer, recognized for his distinctive deep voice and significant contributions to the genre of fado. He helped popularize fado music internationally and was known for blending traditional fado with contemporary influences.",
+       "image": "https://images.qloo.com/i/346887B1-BE7C-4611-8B47-7F30BA8ACF07-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "9DA149EB-E9A1-4698-A760-7FFBF0E5DD43",
+       "name": "Dulce Pontes",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9657584932506541,
+       "tags": [],
+       "address": null,
+       "description": "Dulce Pontes is a renowned Portuguese singer and songwriter celebrated for her powerful and emotive voice. She is credited with revitalizing the traditional Portuguese music genre of fado by blending it with contemporary and classical influences. Her music often incorporates elements of Portuguese folk, classical, and world music, making her a prominent figure in both national and international music scenes.",
+       "image": "https://images.qloo.com/i/9DA149EB-E9A1-4698-A760-7FFBF0E5DD43-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "90E177F2-0B94-4860-ACD1-589C1BCE063D",
+       "name": "Ana Moura",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9653374793165478,
+       "tags": [],
+       "address": null,
+       "description": "Ana Moura is a renowned Portuguese fado singer who has gained international acclaim for her emotive voice and innovative approach to traditional fado music. She blends classic fado elements with contemporary influences, bringing a fresh perspective to the genre while maintaining its deep emotional roots. Moura has released several successful albums and collaborated with various artists, helping to popularize fado worldwide.",
+       "image": "https://images.qloo.com/i/90E177F2-0B94-4860-ACD1-589C1BCE063D-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "73CCEAA6-E597-4984-BD37-33372D4280BE",
+       "name": "Cristina Branco",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9647644986918814,
+       "tags": [],
+       "address": null,
+       "description": "Cristina Branco is a renowned Portuguese fado singer celebrated for her emotive vocal delivery and innovative approach to traditional fado music. She blends classic fado elements with contemporary influences, bringing a fresh perspective to the genre while maintaining its deep emotional roots. Branco has released numerous albums and is recognized for her poetic lyricism and sophisticated musical arrangements.",
+       "image": "https://images.qloo.com/i/73CCEAA6-E597-4984-BD37-33372D4280BE-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      }
+     ],
+     "questions": [
+      "Does Amália Rodrigues remind you of anyone?",
+      "Where were you when you used to hear Amália Rodrigues?"
+     ]
+    },
+    {
+     "id": "game",
+     "title": "This or that? (5 min)",
+     "intro": "There is no wrong answer — the goal is to start a story.",
+     "questions": [
+      "Mariza or Katia Guerreiro?",
+      "Maria Teresa de Noronha or Carlos do Carmo?",
+      "Dulce Pontes or Ana Moura?"
+     ]
+    },
+    {
+     "id": "taste",
+     "title": "A taste of home (10 min)",
+     "intro": "Talk about Bacalhau: who made it, for which occasions, what made it special.",
+     "extraTitle": "Places near Paris that may serve the food of their childhood:",
+     "items": [
+      {
+       "id": "FA764AAE-47AA-4A0F-8D48-8F285251B19F",
+       "name": "Comme à Lisbonne",
+       "type": "urn:entity:place",
+       "year": null,
+       "affinity": 0.9998357581547869,
+       "tags": [],
+       "address": "37 Rue du Roi de Sicile 75004 Paris France",
+       "description": "Cozy Lisbon-style pastry shop in Paris serving authentic pastéis de nata, Portuguese coffee, and curated gourmet Portuguese products.",
+       "image": "https://images.qloo.com/i/FA764AAE-47AA-4A0F-8D48-8F285251B19F-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "6BE1E2B1-E990-47CE-BBAB-E2A7726FF0D7",
+       "name": "Nostre",
+       "type": "urn:entity:place",
+       "year": null,
+       "affinity": 0.9981422781517996,
+       "tags": [],
+       "address": "86 Rue Saint-Antoine 75004 Paris France",
+       "description": "Neighborhood bistrot blending traditional French and Brazilian flavors, offering a curated wine list, terrace seating, and homemade seasonal dishes.",
+       "image": "https://images.qloo.com/i/6BE1E2B1-E990-47CE-BBAB-E2A7726FF0D7-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "1FF3B978-0E46-4B6C-A533-7677652E4A51",
+       "name": "Churrasqueiria",
+       "type": "urn:entity:place",
+       "year": null,
+       "affinity": 0.9980476311734252,
+       "tags": [],
+       "address": "28 Rue Robert Giraudineau 94300 Vincennes France",
+       "description": "Portuguese grill in Vincennes offering late-night grilled meats, diverse drink selection, accessible service, and vegetarian, vegan, and gluten-free options.",
+       "image": "https://images.qloo.com/i/1FF3B978-0E46-4B6C-A533-7677652E4A51-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "BBBA8846-D47A-438F-940A-E58BD51F832F",
+       "name": "Restaurant Saudade",
+       "type": "urn:entity:place",
+       "year": null,
+       "affinity": 0.9976420745272654,
+       "tags": [],
+       "address": "34 Rue des Bourdonnais 75001 Paris France",
+       "description": "Long-standing, family-run Portuguese restaurant in central Paris specializing in classic fish and seafood dishes with traditional wines and a relaxed atmosphere.",
+       "image": "https://images.qloo.com/i/BBBA8846-D47A-438F-940A-E58BD51F832F-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      }
+     ]
+    },
+    {
+     "id": "notes",
+     "title": "Notes for the person leading",
+     "questions": [
+      "Keep it short and calm. Stop as soon as they seem tired.",
+      "Follow the story they want to tell, not the plan.",
+      "Never correct a memory, even if a detail seems wrong."
+     ]
+    }
+   ]
+  },
+  "trace": [
+   {
+    "purpose": "Find the tag for the 1950s",
+    "tool": "qloo_find_tags",
+    "args": {
+     "query": "1950s",
+     "limit": 5
+    },
+    "status": "ok",
+    "count": 5,
+    "mode": "live",
+    "ms": 103
+   },
+   {
+    "purpose": "Find the music of Portugal",
+    "tool": "qloo_find_tags",
+    "args": {
+     "query": "Portugal music",
+     "limit": 5
+    },
+    "status": "ok",
+    "count": 5,
+    "mode": "live",
+    "ms": 95
+   },
+   {
+    "purpose": "Find the cuisine of Porto, Portugal",
+    "tool": "qloo_find_tags",
+    "args": {
+     "query": "Porto, Portugal cuisine",
+     "limit": 5
+    },
+    "status": "ok",
+    "count": 5,
+    "mode": "live",
+    "ms": 103
+   },
+   {
+    "purpose": "Music they are likely to love",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "artist",
+     "signals": [
+      "Amália Rodrigues"
+     ],
+     "include_tags": [
+      "urn:tag:genre:music:portugal",
+      "urn:tag:genre:music:portuguese",
+      "urn:tag:genre:music:portuguesa"
+     ],
+     "include_tags_operator": "union",
+     "limit": 12
+    },
+    "status": "needs_input",
+    "summary": "Choose or correct the unresolved Qloo inputs.",
+    "count": 0,
+    "mode": "live",
+    "ms": 237
+   },
+   {
+    "purpose": "Music they are likely to love (names matched to Qloo artists)",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "artist",
+     "signals": [
+      "DF32AA7D-22E1-4EC1-9AAE-DC69EBC0E167"
+     ],
+     "include_tags": [
+      "urn:tag:genre:music:portugal",
+      "urn:tag:genre:music:portuguese",
+      "urn:tag:genre:music:portuguesa"
+     ],
+     "include_tags_operator": "union",
+     "limit": 12
+    },
+    "status": "ok",
+    "count": 12,
+    "mode": "live",
+    "ms": 203
+   },
+   {
+    "purpose": "Films of the 1950s",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "movie",
+     "signal_tags": [
+      "urn:tag:keyword:media:1950s"
+     ],
+     "include_tags": [
+      "urn:tag:keyword:media:1950s"
+     ],
+     "signal_location": "Portugal",
+     "limit": 20
+    },
+    "status": "ok",
+    "count": 20,
+    "mode": "live",
+    "ms": 824
+   },
+   {
+    "purpose": "A taste of home near Paris, France",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "place",
+     "signal_location": "Paris, France",
+     "filter_location": "Paris, France",
+     "include_tags": [
+      "urn:tag:interests:qloo:portuguese_cuisine",
+      "urn:tag:cuisine:qloo:portuguese",
+      "urn:tag:cuisine:qloo:regional_portuguese",
+      "urn:tag:cuisine:qloo:local_portuguese"
+     ],
+     "include_tags_operator": "union",
+     "limit": 8
+    },
+    "status": "ok",
+    "count": 8,
+    "mode": "live",
+    "ms": 393
+   }
+  ],
+  "mode": "live"
+ },
+ {
+  "profile": {
+   "firstName": "Fatima",
+   "birthYear": 1950,
+   "youthDecade": 1960,
+   "youthStart": 1960,
+   "grewUpIn": "Algiers, Algeria",
+   "livesIn": "Marseille, France",
+   "artists": [
+    "Dahmane El Harrachi"
+   ],
+   "films": [],
+   "dishes": [
+    "Couscous"
+   ],
+   "avoid": [],
+   "language": "fr"
+  },
+  "session": {
+   "title": "Un voyage dans les souvenirs avec Fatima",
+   "labels": {
+    "qloo": "Suggéré par le graphe de goûts de Qloo",
+    "family": "Indiqué par la famille"
+   },
+   "sections": [
+    {
+     "id": "warmup",
+     "title": "Mise en route (5 min)",
+     "questions": [
+      "Quand vous étiez jeune, à Algiers, quelle odeur avaient les rues ?",
+      "Que faisiez-vous le dimanche avec vos amis dans les années 60 ?",
+      "Qui cuisinait le mieux dans votre famille ? Que préparait-il ou elle ?"
+     ]
+    },
+    {
+     "id": "music",
+     "title": "Coin musique (10 min)",
+     "intro": "Faites écouter une ou deux chansons de chaque artiste, puis demandez :",
+     "items": [
+      {
+       "name": "Dahmane El Harrachi",
+       "origin": "family"
+      },
+      {
+       "id": "B529886E-EE7F-4DEF-9BD9-95D4BF296CEE",
+       "name": "Hamid Baroudi",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9498116118329611,
+       "tags": [],
+       "address": null,
+       "description": "Hamid Baroudi is a Moroccan singer renowned for his contributions to traditional Arabic and Moroccan folk music. His work often features classic Arabic melodies and rhythms, reflecting the rich cultural heritage of Morocco and the broader Arab world.",
+       "image": "https://images.qloo.com/i/B529886E-EE7F-4DEF-9BD9-95D4BF296CEE-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "A60FA42E-D2FA-45EA-9E10-0E85C288ACBE",
+       "name": "Cheb Bilal",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9477935882005241,
+       "tags": [],
+       "address": null,
+       "description": "Cheb Bilal is an Algerian Raï singer renowned for his emotive vocal style and contributions to the Raï music genre, which blends traditional Algerian folk music with contemporary influences. He has gained popularity in North Africa and among Raï music fans worldwide.",
+       "image": "https://images.qloo.com/i/A60FA42E-D2FA-45EA-9E10-0E85C288ACBE-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "25F79D57-0E71-4969-90C9-B78C90A1A7CA",
+       "name": "Abdel Ali Slimani",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9460737714202815,
+       "tags": [],
+       "address": null,
+       "description": "Abdel Ali Slimani is an Algerian singer recognized for his work in the Raï music genre, which blends traditional Algerian folk music with contemporary influences.",
+       "image": "https://images.qloo.com/i/25F79D57-0E71-4969-90C9-B78C90A1A7CA-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "E3CAF69A-998F-4EC0-901C-DB6DBD5B4A5F",
+       "name": "Lili Boniche",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9459702678017019,
+       "tags": [],
+       "address": null,
+       "description": "Lili Boniche was an Algerian Jewish singer renowned for his unique blend of Andalusian, Arabic, and Chaabi music. He was a prominent figure in North African music, celebrated for his smooth vocal style and ability to fuse traditional and popular musical elements.",
+       "image": "https://images.qloo.com/i/E3CAF69A-998F-4EC0-901C-DB6DBD5B4A5F-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "44DFAFC2-06DA-4E65-8E40-1E42BB9301FE",
+       "name": "Biyouna",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9458057980740152,
+       "tags": [],
+       "address": null,
+       "description": "Biyouna is an Algerian singer, actress, and performer renowned for her contributions to Raï and Algerian pop music. She is also known for her work in theater and film, blending traditional Algerian sounds with contemporary influences to create a unique musical and artistic identity.",
+       "image": "https://images.qloo.com/i/44DFAFC2-06DA-4E65-8E40-1E42BB9301FE-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "1ABDEC58-68A0-4D56-A60D-2E112BA09767",
+       "name": "Cheb Tarik",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9419321489340048,
+       "tags": [],
+       "address": null,
+       "description": "Cheb Tarik is an Algerian raï singer who gained popularity for his fusion of traditional raï music with modern influences, contributing to the global spread of Algerian raï.",
+       "image": "https://images.qloo.com/i/1ABDEC58-68A0-4D56-A60D-2E112BA09767-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "09D8CEF4-55C8-4F5F-832B-7F39FC70FCAB",
+       "name": "Rachid Taha",
+       "type": "urn:entity:artist",
+       "year": null,
+       "affinity": 0.9393307310794595,
+       "tags": [],
+       "address": null,
+       "description": "Rachid Taha was an Algerian singer and activist renowned for his innovative fusion of traditional Algerian raï music with rock, electronic, and punk influences. He gained international recognition for his energetic performances and politically charged lyrics that often addressed issues of identity, immigration, and social justice. Taha's music bridged cultural divides and brought North African sounds to a global audience.",
+       "image": "https://images.qloo.com/i/09D8CEF4-55C8-4F5F-832B-7F39FC70FCAB-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      }
+     ],
+     "questions": [
+      "Est-ce que Dahmane El Harrachi vous fait penser à quelqu'un ?",
+      "Où étiez-vous quand vous écoutiez Dahmane El Harrachi ?"
+     ]
+    },
+    {
+     "id": "game",
+     "title": "Plutôt ceci ou cela ? (5 min)",
+     "intro": "Il n'y a pas de mauvaise réponse : le but est de lancer une histoire.",
+     "questions": [
+      "Hamid Baroudi ou Cheb Bilal ?",
+      "Abdel Ali Slimani ou Lili Boniche ?",
+      "Biyouna ou Cheb Tarik ?"
+     ]
+    },
+    {
+     "id": "taste",
+     "title": "Un goût de chez soi (10 min)",
+     "intro": "Parlez du plat « Couscous » : qui le préparait, pour quelles occasions, ce qui le rendait spécial.",
+     "extraTitle": "Adresses autour de Marseille qui pourraient servir la cuisine de leur enfance :",
+     "items": [
+      {
+       "id": "1842D8B0-C559-4704-A7A2-0F689FFB98B0",
+       "name": "La Lune de Bejaïa",
+       "type": "urn:entity:place",
+       "year": null,
+       "affinity": 0.5,
+       "tags": [],
+       "address": "113 Bis Rue de Lodi 13006 Marseille France",
+       "description": "Authentic Kabyle Berber restaurant in Marseille serving traditional couscous, chorba, and other North African specialties with dine-in, takeout, and delivery options.",
+       "image": "https://images.qloo.com/i/1842D8B0-C559-4704-A7A2-0F689FFB98B0-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "4B8A2AE3-49F9-4E79-B9E3-4DCEC7BE98EC",
+       "name": "La Marmite Du Maghreb",
+       "type": "urn:entity:place",
+       "year": null,
+       "affinity": 0.5,
+       "tags": [],
+       "address": "7b Rue de la Fare 13001 Marseille France",
+       "description": "Casual Maghreb restaurant in Marseille serving North African dishes, healthy options, and coffee; offers dine-in, takeout, curbside pickup, and delivery.",
+       "image": "https://images.qloo.com/i/4B8A2AE3-49F9-4E79-B9E3-4DCEC7BE98EC-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "5ECAAD0A-41A6-480B-84BB-6B6F7E5BBF9B",
+       "name": "Restaurant Fémina",
+       "type": "urn:entity:place",
+       "year": null,
+       "affinity": 0.5,
+       "tags": [],
+       "address": "1 Rue du Musée 13001 Marseille France",
+       "description": "North African and Mediterranean restaurant in central Marseille offering halal dishes, healthy options, and a moderately priced menu with cocktails, wine, and coffee.",
+       "image": "https://images.qloo.com/i/5ECAAD0A-41A6-480B-84BB-6B6F7E5BBF9B-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      },
+      {
+       "id": "657BBB45-FC53-46AE-B912-3DAB77554DFC",
+       "name": "Bernard Du Bois",
+       "type": "urn:entity:place",
+       "year": null,
+       "affinity": 0.5,
+       "tags": [],
+       "address": "10 Rue Bernard du Bois 13001 Marseille France",
+       "description": "Inexpensive neighborhood spot offering small plates, drinks, coffee and late‑night halal-friendly options with outdoor seating in central Marseille.",
+       "image": "https://images.qloo.com/i/657BBB45-FC53-46AE-B912-3DAB77554DFC-420x-auto.jpg",
+       "why": null,
+       "origin": "qloo"
+      }
+     ]
+    },
+    {
+     "id": "notes",
+     "title": "Conseils pour la personne qui anime",
+     "questions": [
+      "Restez court et calme. Arrêtez dès que la personne semble fatiguée.",
+      "Suivez l'histoire qu'elle a envie de raconter, pas le programme.",
+      "Ne corrigez jamais un souvenir, même si un détail semble faux."
+     ]
+    }
+   ]
+  },
+  "trace": [
+   {
+    "purpose": "Find the tag for the 1960s",
+    "tool": "qloo_find_tags",
+    "args": {
+     "query": "1960s",
+     "limit": 5
+    },
+    "status": "ok",
+    "count": 5,
+    "mode": "live",
+    "ms": 4146
+   },
+   {
+    "purpose": "Find the music of Algeria",
+    "tool": "qloo_find_tags",
+    "args": {
+     "query": "Algeria music",
+     "limit": 5
+    },
+    "status": "ok",
+    "count": 5,
+    "mode": "live",
+    "ms": 102
+   },
+   {
+    "purpose": "Find the cuisine of Algiers, Algeria",
+    "tool": "qloo_find_tags",
+    "args": {
+     "query": "Algiers, Algeria cuisine",
+     "limit": 5
+    },
+    "status": "ok",
+    "count": 5,
+    "mode": "live",
+    "ms": 104
+   },
+   {
+    "purpose": "Music they are likely to love",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "artist",
+     "signals": [
+      "Dahmane El Harrachi"
+     ],
+     "include_tags": [
+      "urn:tag:genre:music:algeria",
+      "urn:tag:genre:music:algerian",
+      "urn:tag:genre:music:algerie"
+     ],
+     "include_tags_operator": "union",
+     "limit": 12
+    },
+    "status": "needs_input",
+    "summary": "Choose or correct the unresolved Qloo inputs.",
+    "count": 0,
+    "mode": "live",
+    "ms": 368
+   },
+   {
+    "purpose": "Music they are likely to love (names matched to Qloo artists)",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "artist",
+     "signals": [
+      "806894D9-50E1-41E6-A15B-3C6B967C556C"
+     ],
+     "include_tags": [
+      "urn:tag:genre:music:algeria",
+      "urn:tag:genre:music:algerian",
+      "urn:tag:genre:music:algerie"
+     ],
+     "include_tags_operator": "union",
+     "limit": 12
+    },
+    "status": "ok",
+    "count": 12,
+    "mode": "live",
+    "ms": 179
+   },
+   {
+    "purpose": "Films of the 1960s",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "movie",
+     "signal_tags": [
+      "urn:tag:keyword:media:1960s"
+     ],
+     "include_tags": [
+      "urn:tag:keyword:media:1960s"
+     ],
+     "signal_location": "Algeria",
+     "limit": 20
+    },
+    "status": "ok",
+    "count": 20,
+    "mode": "live",
+    "ms": 526
+   },
+   {
+    "purpose": "A taste of home near Marseille, France",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "place",
+     "signal_location": "Marseille, France",
+     "filter_location": "Marseille, France",
+     "include_tags": [
+      "urn:tag:cuisine:qloo:algerian",
+      "urn:tag:genre:place:restaurant:algerian",
+      "urn:tag:cuisine:qloo:traditional_algerian",
+      "urn:tag:category:place:algerian_restaurant"
+     ],
+     "include_tags_operator": "union",
+     "limit": 8
+    },
+    "status": "ok",
+    "count": 0,
+    "mode": "live",
+    "ms": 217
+   },
+   {
+    "purpose": "A taste of home near Marseille, France (cuisine as the signal)",
+    "tool": "qloo_recommend",
+    "args": {
+     "target_type": "place",
+     "filter_location": "Marseille, France",
+     "include_tags": [
+      "urn:tag:cuisine:qloo:algerian",
+      "urn:tag:genre:place:restaurant:algerian",
+      "urn:tag:cuisine:qloo:traditional_algerian",
+      "urn:tag:category:place:algerian_restaurant"
+     ],
+     "include_tags_operator": "union",
+     "limit": 8,
+     "signal_tags": [
+      "urn:tag:cuisine:qloo:algerian",
+      "urn:tag:genre:place:restaurant:algerian",
+      "urn:tag:cuisine:qloo:traditional_algerian",
+      "urn:tag:category:place:algerian_restaurant"
+     ],
+     "signal_tags_operator": "union"
+    },
+    "status": "ok",
+    "count": 7,
+    "mode": "live",
+    "ms": 244
+   }
+  ],
+  "mode": "live"
+ }
+]
