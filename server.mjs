@@ -5,7 +5,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { runAgent } from "./lib/agent.mjs";
-import { resolveMode } from "./lib/qloo.mjs";
+import { resolveMode, warmUp } from "./lib/qloo.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT) || 3000;
@@ -67,4 +67,6 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, () => {
   console.log(`Memory Lane running on http://localhost:${PORT} (Qloo mode: ${resolveMode()})`);
+  // Start the Qloo MCP server now so the first visitor does not wait for it.
+  warmUp().catch((err) => console.error("Qloo warm-up failed:", err.message));
 });

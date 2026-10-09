@@ -145,6 +145,25 @@ button {
 .notes-box { background: var(--mist); border-radius: var(--radius); padding: 1rem 1.2rem; }
 .notes-box ul { margin: 0; }
 
+.who { margin: 0.4rem 0 0.6rem; font-size: 0.92rem; }
+.who summary { cursor: pointer; font-weight: 700; color: var(--plum); }
+.who-list { margin: 0.5rem 0 0; padding-left: 1.1rem; color: var(--ink-soft); }
+.who-list li { margin: 0.35rem 0; }
+.who-list strong { color: var(--ink); }
+.places { list-style: none; padding: 0 !important; display: grid; gap: 0.6rem; margin-top: 0.5rem !important; }
+.place {
+  display: grid; gap: 0.15rem; margin: 0 !important;
+  border: 1.5px solid #d7c3d0; border-left: 5px solid var(--plum);
+  border-radius: var(--radius); padding: 0.65rem 0.9rem; background: var(--paper);
+}
+.place .addr { color: var(--ink-soft); font-size: 0.88rem; }
+.place .desc { font-size: 0.88rem; }
+.place .map { font-size: 0.85rem; font-weight: 700; color: var(--plum); justify-self: start; }
+.waiting p { font-weight: 700; color: var(--ink); }
+.waiting p::before { content: ""; display: inline-block; width: 0.7rem; height: 0.7rem; margin-right: 0.6rem; border-radius: 50%; background: var(--marigold); animation: pulse 1s ease-in-out infinite alternate; }
+@keyframes pulse { from { opacity: 0.3; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .waiting p::before { animation: none; } }
+.trace-args { display: block; font-size: 0.8rem; color: var(--ink-soft); }
 .trace { margin-top: 0.5rem; border-top: 1px solid var(--line); padding-top: 1rem; font-size: 0.9rem; }
 .trace summary { cursor: pointer; font-weight: 700; }
 .trace-list { margin: 0.8rem 0 0; padding-left: 1.2rem; color: var(--ink-soft); }
@@ -163,7 +182,8 @@ button {
 
 @media print {
   body { background: #fff; }
-  .intro, .banner, .trace, .session-tools button { display: none !important; }
+  .intro, .banner, .trace, .session-tools button, .place .map { display: none !important; }
+  .who { display: block; } .who-list { display: block; }
   .layout { display: block; padding: 0; }
   .session { box-shadow: none; padding: 0; }
 }
