@@ -1,0 +1,20 @@
+# One-click deploy on Render (free plan): New > Blueprint > pick this repository.
+# Render asks for QLOO_API_KEY at creation; it is stored as a secret, never in the repo.
+services:
+  - type: web
+    name: memory-lane
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm install --no-audit --no-fund
+    startCommand: node server.mjs
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22.19.0"
+      - key: QLOO_API_KEY
+        sync: false
+      - key: QLOO_BASE_URL
+        value: https://hackathon.api.qloo.com
+      - key: QLOO_TRUSTED_BASE_URL
+        value: https://hackathon.api.qloo.com
