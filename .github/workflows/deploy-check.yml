@@ -1,0 +1,32 @@
+name: Deployed app check
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Base URL of the deployed app
+        required: true
+        default: https://memory-lane-8dv1.onrender.com
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ask the deployed app for a session
+        run: |
+          mkdir -p results
+          curl -sS -m 120 "${{ inputs.url }}/api/health" > results/health.json
+          curl -sS -m 180 -X POST "${{ inputs.url }}/api/session" -H 'Content-Type: application/json' \
+            -d '{"firstName":"Jeannine","birthYear":1938,"grewUpIn":"Lyon, France","livesIn":"Paris, France","artists":"Édith Piaf, Bourvil","films":"La Grande Vadrouille","dishes":"Gratin dauphinois","language":"en"}' \
+            > results/deployed-session.json
+      - name: Publish to the deploy-results branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan deploy-results
+          git rm -rq --cached .
+          git add -f results/health.json results/deployed-session.json
+          git commit -qm "Deployed app check"
+          git push -f origin deploy-results
