@@ -54,7 +54,7 @@ function chipList(items, labels) {
 }
 
 // First sentence of a Qloo description, so a caregiver knows who or what it is.
-const firstSentence = (text, max = 160) => {
+const firstSentence = (text, max = 220) => {
   if (!text) return "";
   const m = String(text).match(/^.*?[.!?](\s|$)/);
   const out = (m ? m[0] : String(text)).trim();
@@ -82,7 +82,7 @@ function placeCards(items, mapLabel = "Map") {
     const li = el("li", "place");
     li.append(el("strong", null, p.name));
     if (p.address) li.append(el("span", "addr", p.address));
-    if (p.description) li.append(el("span", "desc", firstSentence(p.description, 140)));
+    if (p.description) li.append(el("span", "desc", firstSentence(p.description, 180)));
     const map = el("a", "map", mapLabel);
     map.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent([p.name, p.address].filter(Boolean).join(" "))}`;
     map.target = "_blank";
