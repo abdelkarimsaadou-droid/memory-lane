@@ -29,7 +29,7 @@ qloo, qloo-mcp, model-context-protocol, node.js, javascript, html, css, render, 
 
 ### Inspiration
 
-I work in a hospital in Paris. Every day I see older patients and nursing-home residents for whom one song, one film or the smell of one dish can open a door that nothing else opens. Reminiscence activities are one of the most widely used non-drug approaches in elder care, but they only work when the material belongs to *that* person's life. In practice, staff and families fall back on the same generic playlist for everyone, and it rarely fits someone who grew up in Lyon in the 1950s, in Porto, or in Algiers.
+In hospitals and nursing homes, there are older patients and residents for whom one song, one film or the smell of one dish can open a door that nothing else opens. Reminiscence activities are one of the most widely used non-drug approaches in elder care, but they only work when the material belongs to *that* person's life. In practice, staff and families fall back on the same generic playlist for everyone, and it rarely fits someone who grew up in Lyon in the 1950s, in Porto, or in Algiers.
 
 The people who know the resident best (their family) have five minutes, not five hours. The people who run the activity (care staff) have many residents and little time to research each one. Memory Lane sits between them.
 
