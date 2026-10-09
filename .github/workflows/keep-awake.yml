@@ -1,0 +1,13 @@
+name: Keep demo awake
+# Render's free plan sleeps after 15 idle minutes; a light ping keeps the judges' first load fast.
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+permissions: {}
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - run: curl -sS -m 120 -o /dev/null -w "%{http_code}\n" https://memory-lane-8dv1.onrender.com/api/health
