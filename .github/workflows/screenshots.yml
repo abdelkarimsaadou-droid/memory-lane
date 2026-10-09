@@ -1,0 +1,30 @@
+name: Gallery screenshots
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        required: true
+        default: https://memory-lane-8dv1.onrender.com
+permissions:
+  contents: write
+jobs:
+  shoot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-save playwright@1 && npx playwright install --with-deps chromium
+      - run: mkdir -p results && node scripts/screenshot.mjs
+        env:
+          APP_URL: ${{ inputs.url }}
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan screenshots
+          git rm -rq --cached .
+          git add -f results/*.png
+          git commit -qm "Gallery screenshots"
+          git push -f origin screenshots
