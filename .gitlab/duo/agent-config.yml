@@ -1,0 +1,13 @@
+# Environment for GitLab Duo flows that clone the repository.
+# Curbcut itself runs with coding_environment: none and works through the
+# GitLab API, but foundational flows (code review, fix pipeline) use this.
+setup_script:
+  - npm ci --no-audit --no-fund
+
+cache:
+  key:
+    files:
+      - package-lock.json
+  paths:
+    - node_modules/
+    - .npm/

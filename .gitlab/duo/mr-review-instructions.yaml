@@ -1,0 +1,38 @@
+# Custom rules for GitLab Duo Code Review on Memory Lane.
+# Memory Lane is used by older adults and carers; many have low vision or
+# unsteady hands. These rules catch what an automated scan can miss.
+instructions:
+  - name: Accessibility of the interface
+    fileFilters:
+      - "public/**/*.html"
+      - "public/**/*.css"
+      - "public/**/*.js"
+    instructions: |
+      Review every change for accessibility (WCAG 2.2 AA) with older users in mind:
+      1. Every input has a visible <label> tied to it; placeholders are not labels.
+      2. Every image or icon that carries meaning has a text alternative; decorative ones use alt="" or aria-hidden.
+      3. Text contrast is at least 4.5:1 (3:1 for large text); never rely on colour alone to convey meaning.
+      4. Base font size stays at or above 18px; do not set fixed heights that clip text when users zoom to 200%.
+      5. Interactive targets are at least 24x24 CSS pixels (WCAG 2.5.8); prefer 44x44 for primary actions.
+      6. Everything works with the keyboard alone; focus is always visible (no outline: none without a replacement).
+      7. Motion respects prefers-reduced-motion.
+      8. Dynamic results are announced (aria-live) and errors are associated with their field.
+      Explain each finding in one plain-language sentence saying who would be affected.
+
+  - name: Plain language in generated sessions
+    fileFilters:
+      - "lib/compose.mjs"
+    instructions: |
+      Session text is read aloud to older people, some living with dementia. Check that new or changed
+      strings use short sentences, everyday words, no quiz-style questions with a right answer, and no
+      wording that corrects or tests memory. Both English and French versions must say the same thing.
+
+  - name: Release gate integrity
+    fileFilters:
+      - ".gitlab-ci.yml"
+      - "scripts/a11y-scan.mjs"
+      - "a11y-baseline.json"
+    instructions: |
+      Flag any change that weakens the accessibility gate: removing states from the scan, lowering the
+      blocking impact levels, adding entries to the baseline without a linked issue, or allowing the
+      accessibility job to fail. These changes need an explicit justification in the merge request.

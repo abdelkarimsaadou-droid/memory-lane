@@ -12,13 +12,15 @@ const PORT = Number(process.env.PORT) || 3000;
 const TYPES = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml" };
 
 // Small per-IP limiter so a public demo cannot burn the event quota.
+// Tests that run many sessions in a row can raise it with RATE_LIMIT_PER_MIN.
+const LIMIT = Number(process.env.RATE_LIMIT_PER_MIN) || 6;
 const hits = new Map();
 const allow = (ip) => {
   const now = Date.now();
   const recent = (hits.get(ip) ?? []).filter((t) => now - t < 60_000);
   recent.push(now);
   hits.set(ip, recent);
-  return recent.length <= 6;
+  return recent.length <= LIMIT;
 };
 
 const send = (res, code, body, type = "application/json") => {

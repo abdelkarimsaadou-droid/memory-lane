@@ -62,3 +62,21 @@ browser ── POST /api/session ──> server.mjs ──> lib/agent.mjs ──
 ## License
 
 MIT
+
+## Curbcut: accessibility as a release gate
+
+Memory Lane is used by older adults and carers, so accessibility is not optional. Curbcut is the GitLab automation that keeps it that way after the code is written:
+
+- **Verify**: every merge request runs `scripts/a11y-scan.mjs`, which opens the app in six real states (desktop, phone, print, English, French, error) and checks WCAG 2.2 AA with axe-core. New serious or critical problems fail the pipeline and show up in the merge request test and code quality widgets.
+- **Fix (GitLab Duo flow)**: `.gitlab/duo/flows/curbcut.yaml` is triggered when a pipeline fails. A diagnosis agent reads the failed job log and the merge request diff; a fix agent pushes a minimal fix to the branch and explains each change in plain language. A person approves the merge (supervised autonomy).
+- **Review**: `.gitlab/duo/mr-review-instructions.yaml` gives GitLab Duo Code Review accessibility and plain-language rules for this audience.
+- **Secure, package, release**: secret detection and SAST, a container image in the GitLab registry, and a production deploy that only happens after the gates pass.
+- **Monitor**: a scheduled pipeline scans the live site daily; a regression wakes the Curbcut flow, which opens an issue and a fix merge request.
+- **Govern**: a public accessibility statement is rebuilt from the latest scan and published with GitLab Pages, as the European Accessibility Act expects.
+
+Run the gate locally:
+
+```sh
+QLOO_MODE=demo RATE_LIMIT_PER_MIN=200 node server.mjs &
+node scripts/a11y-scan.mjs --url http://localhost:3000
+```
