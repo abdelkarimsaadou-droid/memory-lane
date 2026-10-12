@@ -1,5 +1,6 @@
 name: Keep demo awake
 # Render's free plan sleeps after 15 idle minutes; a light ping keeps the judges' first load fast.
+# A slow wake-up is retried and never reported as a failure (it is not one).
 on:
   schedule:
     - cron: "*/10 * * * *"
@@ -8,6 +9,13 @@ permissions: {}
 jobs:
   ping:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 8
     steps:
-      - run: curl -sS -m 120 -o /dev/null -w "%{http_code}\n" https://memory-lane-8dv1.onrender.com/api/health
+      - run: |
+          for i in 1 2 3; do
+            code=$(curl -s -m 150 -o /dev/null -w "%{http_code}" https://memory-lane-8dv1.onrender.com/api/health || true)
+            echo "attempt $i: $code"
+            [ "$code" = "200" ] && exit 0
+            sleep 20
+          done
+          echo "::warning::Demo did not answer after 3 attempts"
